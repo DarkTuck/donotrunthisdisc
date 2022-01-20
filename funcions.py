@@ -3,6 +3,7 @@ import os
 import time
 import random
 import pytdm
+import enemy
 from random import randint
 from pygame import mixer
 from time import sleep
@@ -99,6 +100,33 @@ def gameover(x, k):
     else:
         pass
 
+from random import choice
+def bandyta():
+    atack={
+        "dźgnięcie": choice(range(1,3)),
+        "uderzenie": choice(range(3,5)),
+        "płapka": 5,
+        "drapanie po głowie":0,
+    }
+    a=choice(list(atack))
+    return a, atack[a]
+def walkaadvance(x):
+    global z, l, walkaloop, ez
+    i=0
+    walkaloop=0
+    x=x
+    a=input("wybierz atak")
+    if a > x[x]:
+        b=a-x[x]
+        ez-b
+        if ez==0:
+            walkaloop=1
+            print('wygrana')
+        else:
+            pass
+    else:
+        i=i+1
+        gameover(i,f'{x}cię wykończyło')
 
 def walka(p, x):
     global z, l, walkaloop
