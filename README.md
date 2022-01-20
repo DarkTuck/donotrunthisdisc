@@ -1,2 +1,5 @@
 # donotrunthisdisc
-game in python for school project
+Hi
+This is our small python game project.
+
+
