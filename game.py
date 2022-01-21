@@ -1,5 +1,6 @@
 #not copyrighted by Konstanty Stachera, Franciszek Płecha, Stanisław Sklepowicz
 #							DT				 Toast			  CzerwonaCegła
+import enemy
 import funcions
 from funcions import clear
 from funcions import sleep
@@ -81,6 +82,7 @@ print('widzisz postać przypominającą bandyte on chyba też cię zauważa')
 sleep(2)
 funcions.printr('bandyta cię atakuje')
 sleep(1)
+print(enemy.bandyta())
 funcions.anyfightcheck(1,5,5,'a-uciekaj','b-walcz','c-rozejrzyj się','bandyta','uciekłeś',
 			  'bandyta cię dopadł',
 			  'zauważasz stalaktyt który się ledwo trzyma, rzucasz w niego kamieniem i spada na bandyte \n wygrywasz',

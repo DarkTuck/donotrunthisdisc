@@ -105,8 +105,9 @@ def walkaadvance(x):
     i=0
     walkaloop=0
     x=x
+    n=x[x]
     a=input("wybierz atak")
-    if a > x[x]:
+    if int(a) > n:
         b=a-x[x]
         ez-b
         if ez==0:
