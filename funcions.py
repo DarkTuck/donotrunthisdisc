@@ -2,7 +2,6 @@ import sys
 import os
 import time
 import random
-import pytdm
 from random import randint
 from pygame import mixer
 from time import sleep
@@ -293,8 +292,6 @@ def dtrandom():
 
 
 def dt(k, o, x):
-    mixer.quit
-    mixer.init
     mixer.music.load('DT.ogg')
     mixer.music.play(-1)
     global dtm
@@ -309,7 +306,6 @@ def dt(k, o, x):
             dtrandom()
         else:
             pass
-    mixer.quit
 
 
 def printr(a):
