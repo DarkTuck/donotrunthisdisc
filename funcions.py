@@ -330,7 +330,7 @@ def anyfightcheck(enemsil, zwi, inte, a, b, c, enemname, zwian, zwinoan, inan, i
             else:
                 k = (zwinoan)
                 print(k)
-                gameover(1, k, run)
+                gameover(1, k)
 
         elif j == 'b':
             walka(enemsil, enemname)
