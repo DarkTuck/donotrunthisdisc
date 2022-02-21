@@ -123,8 +123,7 @@ def walka(p, x):
         k = (f'przegrywasz z {x}')
         print(k)
         i = i + 1
-    test = gameover(i, k)
-    test
+    gameover(i, k)
 
 
 dtm = 0
@@ -263,7 +262,7 @@ def dtend():
 	,**(((///////////(%@@@@&(,,@@%%%%%%%%%%%%%%%%%%%%%%%%%%%#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#******/%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@*......""",
                  'magenta')
          )
-    print(colored('to koniuec jesteś wolny', 'blue'))
+    print(colored('to koniec jesteś wolny', 'blue'))
     printm('DT ending')
     input()
 
