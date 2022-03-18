@@ -85,7 +85,29 @@ def gGameOver(a):
         aurorap('jeszcze się zobaczymy')
         sys.exit()
 
-
+def boot():
+    delay_print(
+        colored('Starting Up \nFastBIOS™ version 20.77 11/20/1985\nNot Copyrighted 1984 by Tuck Inc.\n', 'green'))
+    draw(colored("""                                        8888888888                888         888888b.  8888888 .d88888b.   .d8888b.  
+    										888                       888         888  "88b   888  d88P" "Y88b d88P  Y88b 
+    										888                       888         888  .88P   888  888     888 Y88b.      
+    										8888888  8888b.  .d8888b  888888      8888888K.   888  888     888  "Y888b.   
+    										888         "88b 88K      888         888  "Y88b  888  888     888     "Y88b. 
+    										888     .d888888 "Y8888b. 888         888    888  888  888     888       "888 
+    										888     888  888      X88 Y88b.       888   d88P  888  Y88b. .d88P Y88b  d88P 
+    										888     "Y888888  88888P'  "Y888      8888888P" 8888888 "Y88888P"   "Y8888P"  
+    																			  """, 'magenta'))
+    delay_print(colored(
+        'CPU: 80286-12 \nChecking Memory: 16 000K\nMemory Status: OK\nDrive C: Potato X1000 \nDrive Size C:(wstaw tu rozmiar pliku koncowej gry)\nDrive D: NULL ',
+        'green'))
+    sleep(2)
+    clear()
+    delay_print('Booting to Toast OS...\n')
+    with alive_bar(100, title="Loading OS", bar='classic2') as bar:
+        for i in range(100):
+            time.sleep(.09)
+            bar()
+    clear()
 def gameover(x, k):
     global l
     if x == 1:
