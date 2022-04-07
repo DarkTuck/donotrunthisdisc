@@ -1,0 +1,3 @@
+pygame~=2.1.2
+pytdm~=0.1.2
+termcolor~=1.1.0
