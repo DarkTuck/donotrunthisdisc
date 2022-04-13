@@ -69,4 +69,7 @@ funcions.anyfightcheck(1,5,5,'a-uciekaj','b-walcz','c-rozejrzyj się','bandyta',
 			  'nie znajdujesz nic co by ci pomogło w walce, twoje poszukiwania trwały na tyle długo że czujesz nóż między żebrami')
 mixer.fadeout(10)
 mixer.quit()
-input()
+sleep(2)
+print('świat ci znika przed oczami i po chwili znadujesz się w nowej lokacji')
+funcions.aurorap('całkiem nieźle ale to dopiero początek')
+sleep(5)
