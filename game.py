@@ -3,10 +3,8 @@
 import funcions
 from funcions import clear
 from funcions import sleep
-from funcions import delay_print
 from funcions import draw
 from termcolor import colored
-import time
 from pygame import mixer
 z = funcions.randint(1, 10)
 x = funcions.randint(1, 10)
@@ -73,3 +71,4 @@ sleep(2)
 print('świat ci znika przed oczami i po chwili znadujesz się w nowej lokacji')
 funcions.aurorap('całkiem nieźle ale to dopiero początek')
 sleep(5)
+exec ('game level 2.py')
