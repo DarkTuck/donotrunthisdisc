@@ -2,6 +2,7 @@ import sys
 import os
 import time
 import random
+import pickle
 from random import randint
 from pygame import mixer
 from time import sleep
@@ -12,8 +13,15 @@ def clear():
         os.system('cls')
     else:
         os.system('clear')
-
-
+def save():
+    global  z,x,y,l,a
+    data=[z,x,y,l,a]
+    with open('save.sav','wb') as f:
+        pickle.dump(data,f)
+def loadS():
+    objdump= None
+    with open('save.sav','rb') as f:
+        objdump=pickle.load(f)
 def draw(str):
     # This function allows the game to draw graphics
     for letter in str:
@@ -22,30 +30,18 @@ def draw(str):
         time.sleep(0.0001 ** 100)
 
     print('')
-
-
 def delay_print(s):
     for c in s:
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.08)
-
-
 def death_print(s):
     for c in s:
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.420)
-
-
 def aurorap(a):
     delay_print(colored(a, 'green'))
-
-
-a = 0
-walkaloop = 0
-
-
 def arti():
     global a
     deth = [f"\nTwoja dusza jest moja słuchaj {a} ,mogę dać ci kolejną szanse",

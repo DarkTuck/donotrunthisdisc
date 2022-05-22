@@ -10,6 +10,8 @@ z = funcions.randint(1, 10)
 x = funcions.randint(1, 10)
 y = funcions.randint(1, 10)
 l = 3
+a ='a'
+walkaloop = 0
 clear()
 funcions.boot()
 funcions.delay_print(colored('witaj \n jestem Aurora\n  a ty jak masz na imię\n','green'))
@@ -71,4 +73,5 @@ sleep(2)
 print('świat ci znika przed oczami i po chwili znadujesz się w nowej lokacji')
 funcions.aurorap('całkiem nieźle ale to dopiero początek')
 sleep(5)
+funcions.save()
 exec ('game level 2.py')
