@@ -2,11 +2,13 @@ import sys
 import os
 import time
 import random
+import stats
 from random import randint
 from pygame import mixer
 from time import sleep
 from termcolor import colored, cprint
 from alive_progress import alive_bar, config_handler
+z,x,y,l=stats.stats_list
 def clear():
     if os.name == 'nt':
         os.system('cls')
