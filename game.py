@@ -69,4 +69,47 @@ sleep(2)
 print('świat ci znika przed oczami i po chwili znadujesz się w nowej lokacji')
 funcions.aurorap('całkiem nieźle ale to dopiero początek')
 sleep(5)
-exec ('game level 2.py')
+print(colored('ROZDIAŁ-II\nGÓRY','white',attrs=['bold','underline']))
+sleep(1)
+draw(colored("""          /\
+         /**\
+        /****\   /\
+       /      \ /**\
+      /  /\    /    \        /\    /\  /\      /\            /\/\/\  /\
+     /  /  \  /      \      /  \/\/  \/  \  /\/  \/\  /\  /\/ / /  \/  \
+    /  /    \/ /\     \    /    \ \  /    \/ /   /  \/  \/  \  /    \   \
+   /  /      \/  \/\   \  /      \    /   /    \
+__/__/_______/___/__\___\__________________________________________________   """,'grey'))
+print('po wyjściu z jaskini znajdujesz się w górach, zauważasz wioskę do której się udajesz')
+sleep(1)
+draw(colored("""                       X_x
+                      / \\\
+                      |n| |
+                    )(|_|-'X
+                   /  \\Y// \
+                   |A | | |A|
+                   |  | | |_|
+            )(__X,,|__|MEB;;;-,)(,
+           /  \\\;;;;;;;;;;;;/    \
+           |A | |            | U  |
+         )_|  | |____)-----( |    |
+        ///|__|-'////       \|___)=(__X
+       /////////////         \///   \/ \
+       |           |  U    U |//     \u|
+       |   )_,-,___|_)=(     | |  U  |_|_X
+       |  ///   \\|//   \    | |  __ |/// \
+     )_')(//     \Y/     >---)=( /  \|  | |-----------------..,
+    //// ,\ u   u |   u /////   \|  ||__|A|----------------.., \,
+   |  | .. |      |    ///// ,-, \__||--------------------.., \, \,
+---'--'_::_|______'----| u | | | |-----------------------.., \, \, \,
+                       |___|_|_|_|----------------------.., \, \, \, \,
+                            `--------------------------.., \, \, \, \, \
+                                                       \, \, \, \, \, \ \
+                                                         \, \, \, \, \ \
+                                                           \, \, \, \ \
+                                                             \, \, \ \
+                                                               \, \ \
+                                                                 \ \
+                                                                  """,'brown'))
+print('w wiosce witają cie ciepło dają ci jadło, napajają i zapewniają schronienie.\n oferują ci żebyś się tu osiedlił co zdecydujesz')
+funcions.QA(input('a-zostaje\nb-nie zostaje'),funcions.wioska_ending(),print("wyruszasz dalej"))

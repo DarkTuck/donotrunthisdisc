@@ -121,8 +121,42 @@ def gameover(x, k):
             return l - 1
     else:
         pass
+def QA(a,odpa,odpb):
+    if a=='a':
+        print(odpa)
+    else:
+        print(odpb)
+def wioska_ending():
+    draw("""
 
 
+                    |      |        ,---------,
+                    K.    .H        |r'''|'''Y|
+                   /  *'.*  \       ||   |   ||
+                  /          \      ||===|===||
+                 /.-       -. \     ||   |   ||
+                / |-|    _/-/  \    |L.__|__.J|
+               /  \)_)  (_()    \   '---------'
+            _________________________
+             -__LLLLLLLLLLLLLLLLL__-
+              \|#/#############\#|/
+              \|##/           \##|/
+              \|#|  )  ) ( ) ) |#|/
+              \|#|  ( ( ()((   |#|/
+              \|#|   /\__\_(-  |#|/
+ _____________\|#| _(\/L/(\/)_ |#|/_____________
+              \|#|-.-.-.-.-.-.-|#|/            
+               '''             '''
+
+                 ,_,_,_,_,_,_,_,
+                /   .-.   .-.   \
+               / .-'   '-'   '-. \
+              /-'    .-' '-.    '-\
+              +'+'+'+'+'+'+'+'+'+'+
+""")
+    print("osiadłeś w wiosce i wiedziesz szczesliwe życie")
+    aurorap("gratulacje wygrałeś")
+    print("wioska ending")
 def walka(p, x):
     global z, l, walkaloop
     i = 0
